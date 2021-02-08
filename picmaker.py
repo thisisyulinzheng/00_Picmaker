@@ -1,7 +1,7 @@
 img = open("image.ppm", "w")
 img.write("P3 500 500 255 ")
 
-#tried a bunch of more complicated things with if statements and whatnot, but who knew something this simple could create such an awesome effect 
+#if you view this as .ppm, you can get a different result than when you convert to .png or even .tiff (which theoretically should be lossless)
 for x in range(0, 500):
     for y in range(0, 500):
         a = (abs(x - 256))
